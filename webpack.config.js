@@ -7,6 +7,7 @@
 const pathlib = require('path');
 
 module.exports={
+	mode :"development",
 	entry: {
 		index: './src/index.js',
 		test :'./src/1.js'

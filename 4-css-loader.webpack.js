@@ -4,7 +4,7 @@ const pathlib = require('path');
 
 module.exports={
     module:'development',
-    entry : '/src/ES6',
+    entry : '/src/2',
     output: {
         path: pathlib.resolve('dest'),
         filename:'budle.js'
@@ -12,14 +12,7 @@ module.exports={
     module:{
         rules:[
             {
-                exclude:/node_modules/,
-                test: /\.js$/,
-                use:{
-                    loader : 'bable-loader',
-                    options: { 
-                        presets:['env']
-                    }
-                }
+                test:/\.css$/, use:'css-loader'
             }
         ]
     }

@@ -6,8 +6,6 @@
   "scripts": {
     "start": "webpack-dev-server --watch --inline --config 2-devserver-config.js"
   },
- 
-  
   "devDependencies": {
     "webpack": "^4.31.0",
     "webpack-cli": "^3.3.2",
